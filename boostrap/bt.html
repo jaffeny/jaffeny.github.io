@@ -52,7 +52,7 @@ body {font-family: "Lato", sans-serif}
   </div>
   
 <!-- The Band Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="band" >
+  <div class="w3-container w3-text-black w3-content w3-padding-64" style="max-width:800px" id="article" >
     <h2 class="w3-wide">假新聞與老人：電台賣藥老人依舊捧場</h2>
     <p><i>陳潔、楊孟軒報導</i></p>
     <p class="w3-justify">2006年起，NCC大刀闊斧取締地下電台有成，以為從此電台賣藥奇觀會就此成為歷史。沒想到，賣藥仍然是合法電台的營運選擇之一。若干天花亂墜、像仙丹一般的產品，依舊大量充斥在電台各個時段，吸引不少長輩聽眾購買。</p>
@@ -110,7 +110,7 @@ body {font-family: "Lato", sans-serif}
     <p>根據NCC統計，自104年3月起，截至目前公佈最新的105年3月，電台違反衛生法規共149件，其中僅22件屬於藥品違反《藥事法》，佔14.7％; 其餘以《食品安全衛生法》為大宗共117件，佔78.5％，理由多為「涉及誇大不實，易生誤解」。</p>
       
        <div class="w3-row w3-padding-32">
-      <div class="w3">
+      <div class="w3" id="data">
         <img src="../boostrap/assets/12.png" class="w3-round w3-margin-bottom" alt="目104年3月至105年3月廣播違法類別比例（製圖/陳潔）。" style="width:100%">
       </div>
     </div>
@@ -134,79 +134,17 @@ body {font-family: "Lato", sans-serif}
       
   </div>
 
-  <!-- The Tour Section -->
-  <div class="w3-black" id="tour">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">TOUR DATES</h2>
-      <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
-
-      <ul class="w3-ul w3-border w3-white w3-text-grey">
-        <li class="w3-padding">September <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-        <li class="w3-padding">October <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-        <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>
-      </ul>
-
-      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-        <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>New York</b></p>
-            <p class="w3-opacity">Fri 27 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Paris</b></p>
-            <p class="w3-opacity">Sat 28 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>San Francisco</b></p>
-            <p class="w3-opacity">Sun 29 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Ticket Modal -->
-  <div id="ticketModal" class="w3-modal">
-    <div class="w3-modal-content w3-animate-top w3-card-4">
-      <header class="w3-container w3-teal w3-center w3-padding-32"> 
-        <span onclick="document.getElementById('ticketModal').style.display='none'" 
-       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
-        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
-      </header>
-      <div class="w3-container">
-        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="How many?">
-        <p><label><i class="fa fa-user"></i> Send To</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="Enter email">
-        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
-        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
-        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
-      </div>
-    </div>
-  </div>
+  
 
   <!-- The Contact Section -->
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
     <h2 class="w3-wide w3-center">CONTACT</h2>
-    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+    <p class="w3-opacity w3-center"><i>Drop a note!</i></p>
     <div class="w3-row w3-padding-32">
       <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+        <i class="fa fa-map-marker" style="width:30px"></i> Taipei, Taiwan<br>
+        <i class="fa fa-phone" style="width:30px"></i> Tel: +886 233663131<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: ntujournalism.e@gmail.com<br>
       </div>
       <div class="w3-col m6">
         <form action="/action_page.php" target="_blank">
@@ -227,25 +165,7 @@ body {font-family: "Lato", sans-serif}
   
 <!-- End Page Content -->
 </div>
-<!-- Add Google Maps -->
-<div id="googleMap" style="height:400px;" class="w3-grayscale-max"></div>
-<script>
-function myMap() {
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
 
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
