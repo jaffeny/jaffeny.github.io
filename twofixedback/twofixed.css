@@ -1,0 +1,42 @@
+
+#first {
+    background-image: url("20160812-1.png");
+    min-height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+#first .row{
+ min-height:800px;
+
+}
+
+
+#first .row div{ 
+    min-height: 1200px ;
+}
+
+
+
+
+
+#second {
+    background-image: url("20160812.png");
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#rocket{
+    height: 20%;
+    position: absolute;
+    bottom: 0px;
+    right:-20%;
+    z-index: 20;
+}
