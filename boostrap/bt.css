@@ -1,0 +1,33 @@
+#first {
+    background-image: url("../boostrap/assets/13.png");
+    min-height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+#first .row{
+ min-height:800px;
+
+}
+
+
+#first .row div{ 
+    min-height: 1200px ;
+}
+
+
+
+
+
+#second {
+    background-image: url("../boostrap/assets/12.png");
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
