@@ -1,0 +1,18 @@
+
+#first {
+    background-image: url("../boostrap/assets/Tsai1.png");
+    min-height: 1200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#second {
+    background-image: url("../boostrap/assets/Tsai2.png");
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

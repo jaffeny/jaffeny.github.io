@@ -1,19 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+      #divContext {
+        border: 1px solid #9C9898;
+		left:100px;
+		top:100px;
+		position:absolute;
+		width:578px;
+		height:200px;
+      }
+    </style>
+    <script>
+      function loadImages(sources, callback) {
+        var images = {};
+        var loadedImages = 0;
+        var numImages = 0;
+        // get num of sources
+        for(var src in sources) {
+          numImages++;
+        }
+        for(var src in sources) {
+		  images[src] = new Image();
+		  images[src].onload = function() {
+			if(++loadedImages >= numImages) {
+			  callback(images);
+			}
+		  };
+		  images[src].src = sources[src].src;
+		  images[src].style.left = sources[src].left ;
+		  images[src].style.top = sources[src].top ;
+		  images[src].style.width = sources[src].width ;
+		  images[src].style.height = sources[src].height ;
+		  images[src].style.position = 'absolute';
+		  images[src].style.zIndex = sources[src].zIndex ;
+        }
+      }
 
+      window.onload = function(images) {		
+		var image_data = {
+		   darthVarder:{src:"http://www.html5canvastutorials.com/demos/assets/darth-vader.jpg",left:"100px",top:"30px",width:"200px",height:"137px",zIndex:1},
+		   yoda:{src:"http://www.html5canvastutorials.com/demos/assets/yoda.jpg",left:"250px",top:"55px",width:"93px",height:"104px",zIndex:2}
+		};
 
-<head>
-    <title>一例一休、功德草案，臺灣的勞工怎麼辦？</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <html>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="banner.css">
+        loadImages(image_data, function(images) {
+			var div = document.getElementById('divContext');
+            for(var key in images)
+			{
+			    div.appendChild(images[key]);
+			}
+        });
+      };
 
-
-<body>
-    <div id="first" class="container-fluid"></div>
-    <div id="second" class="container-fluid"></div>
-    <div style="height:1000px;background-color:black;"></div>
-</body>
-
+    </script>
+  </head>
+  <body>
+    <div id="divContext">
+	</div>
+  </body>
 </html>
-</head>
