@@ -1,24 +1,20 @@
-
 <style type="text/css">
 <!-- 
 #IMG_1{
 　position:absolute;
 　top:10px;
 　left:10px;
-　width:300px;
-　height:150px;
+　width:150px;
+　height:100px;
 　z-index:1;
+  
 }
 #IMG_2{
 　position:absolute;
 　top:10px;
 　left:50px;
-　width:300px;
-　height:150px;
+　width:150px;
+　height:100px;
 　z-index:2;
 }
--->
-</style>
-<img scr="IMG_1" id="IMG_1">
-<img scr="IMG_2" id="IMG_2">
  
